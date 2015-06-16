@@ -54,7 +54,7 @@ right: -2280px!important;
 @media (max-width:770px) {
 	.carousel-inner {
   position: relative;
-  width: 76%;
+  width:88%;
   overflow: hidden;
 }
 .col-sm-8.animation.stretchRight.slideUp {
@@ -66,10 +66,10 @@ right: -2280px!important;
 }
 div#carousel-example-generic {
 	position: absolute;
-  top: -265px;
-  left: -45px;
+  
+
   float: left;
-  /* right: -2px; */
+   right: 10px; 
 }
 
 .slider-app1 {
@@ -85,13 +85,22 @@ div#carousel-example-generic {
 .slider-app2 {
   display: block;
   border: 2px solid #2B1E15;
-  width: 50%;
+  width: 48%;
   text-align: left;
   padding: 10px 8px;
-  margin: 20px 150px 0px 0px;
+  margin: 10px 5px 0px 0px;
   position: relative;
   /* left: 50px; */
   float: left;
+}
+	.slider-app2.store {
+		padding-bottom: 12px;
+	}
+
+
+.slider-app2.store strong {
+		font-size: 10px;
+ 
 }
 	.site-footer small {
 		color: #B3B3B3;
