@@ -71,7 +71,18 @@ li {
 /* ==========================================================================
    2.main
    ========================================================================== */
-   
+
+
+address.margin-bottom-40 {
+	color: #B3B3B3;
+  font-size: 1em;
+  margin: 0.6em 0 .75em;
+  display: inline-block;
+}
+
+.pre-footer-col a {
+  color: #F5CA87;
+}
 .main {
   background: url(../img/bg.jpg) center center no-repeat scroll;
   background-size: cover;
@@ -1173,7 +1184,7 @@ section#contact {
 }
 	.navbar-fixed-top, .navbar-fixed-bottom {
 
-  width: 95.3%!important;
+  /*width: 95.3%!important;*/
 }
 .col-sm-5.animation.stretchRight.slideUp {
 		  display: table;
