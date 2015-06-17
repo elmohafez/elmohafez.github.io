@@ -26,6 +26,7 @@
    ========================================================================== */
 
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
 body {
   font-family: 'Droid Arabic Kufi', sans-serif;
   font-weight: 400;
@@ -967,9 +968,9 @@ blockquote {
 
 
 .gray {
-  padding-top: 50px;
+ /* padding-top: 50px;
   float: left;
-  width: 100%;
+  width: 100%;*/
   background-color: #f2f3f3;
   /*background-image: -webkit-linear-gradient(45deg, #f2f3f3, #FFFFFF 50%, #FBF8EA 50%, #FBF8EA 100%);
   background-image: -moz-linear-gradient(45deg, #f2f3f3, #FFFFFF 50%, #FBF8EA 50%, #FBF8EA 100%);*/
@@ -1084,9 +1085,9 @@ margin-left: 110px;
 }
 
  .site-footer.section-spacing {
-padding: 4px 0;
+/*padding: 4px 0;
 display: table;
-width: 100%;
+width: 100%;*/
 }
 
 
@@ -1118,8 +1119,8 @@ blockquote.col-md-12.center-block {
 
 
 section#contact {
-	  display: table;
-  width: 100%;
+	/*  display: table;
+  width: 100%;*/
 }
 .owl-carousel.owl-rtl {
 	height: 300px;
@@ -1167,7 +1168,13 @@ section#contact {
 
 
 @media (max-width:992px) {
+	body, html {
+  overflow-x: hidden!important;
+}
+	.navbar-fixed-top, .navbar-fixed-bottom {
 
+  width: 95.3%!important;
+}
 .col-sm-5.animation.stretchRight.slideUp {
 		  display: table;
 }

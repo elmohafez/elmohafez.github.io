@@ -65,11 +65,10 @@ right: -2280px!important;
   font-size: 17px;
 }
 div#carousel-example-generic {
-	position: absolute;
-  
-
-  float: left;
-   right: 10px; 
+	  width: 94%;
+  position: absolute;
+  float: none;
+  right: 8px;
 }
 
 .slider-app1 {
@@ -99,7 +98,7 @@ div#carousel-example-generic {
 
 
 .slider-app2.store strong {
-		font-size: 10px;
+		font-size: 10px!important;
  
 }
 	.site-footer small {
