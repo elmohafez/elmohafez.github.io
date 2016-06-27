@@ -67,7 +67,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand page-scroll" href="#page-top">محفظ الوحيين</a>
+    <a class="navbar-brand page-scroll wow bounceIn" data-wow-duration="2s"  href="#page-top">محفظ الوحيين</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -93,8 +93,10 @@
  <div class="container home" id="home">
   <div class="row">
      <div class="col-sm-5 animation slideUp stretchRight">
-             <h3>محفظ الوحيين يتيح لك إمكانية حفظ القرآن الكريم بالقراءات بالرسم العثماني
+         <!--class="wow bounceIn " data-wow-duration="2s" data-wow-delay=".5s"-->
+         <h3 >محفظ الوحيين يتيح لك إمكانية حفظ القرآن الكريم بالقراءات بالرسم العثماني
 والسنة النبوية والمتون بطريقة سهلة.</h3>
+         <!--<div class="wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.5s">-->
        <h4 class="hidden-xs">التطبيق يدعم: </h4>
               <ul class="hidden-xs">
                   <li>
@@ -107,12 +109,13 @@
                       كتب المتون كتحفة الأطفال والشاطبية والجزرية والبيقونية وغيرها.
                   </li>
               </ul>
-         
-         <div class="action-btn"><div class="slider-app2" onclick="location.href='https://itunes.apple.com/eg/app/elmohafez-tv-mhfz-alwhyyn/id560715467?mt=8';">
+         <!--</div>-->
+         <div class="action-btn">
+             <div class="slider-app2 " onclick="location.href='https://itunes.apple.com/eg/app/elmohafez-tv-mhfz-alwhyyn/id560715467?mt=8';">
                   <div class="slider-img"><i class="fa fa-apple" style="font-size: 40px;"></i></div>
                   <div class="app1-txt">Available on<br><strong>App Store</strong></div>
                 </div> 
-            <div class="slider-app2"  onclick="location.href='https://play.google.com/store/apps/details?id=net.hammady.android.mohafez';">
+            <div class="slider-app2" onclick="location.href='https://play.google.com/store/apps/details?id=net.hammady.android.mohafez';">
                   <div class="slider-img">
 
                                         <i class="fa fa-android" style="font-size: 40px;"></i>
@@ -136,7 +139,7 @@
                 </div>
              </div>
        
-       <div class="video-conatiner">
+       <div class="video-conatiner wow tada" data-wow-duration="1.5s" data-wow-delay="1.5s">
 								<a class="video-image playVideo" href="#." data-toggle="modal" data-target="#myModal" data-title="Intro Video">
 									<img src="https://i.ytimg.com/vi_webp/2XqYS8Avq2U/maxresdefault.webp" alt="Video">
 									<span><i class="fa fa-play customColor"></i></span>
@@ -183,7 +186,7 @@
     <section id="features" class="home_feature">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center wow bounceInDown" data-wow-duration="2s">
                     <h2 class="section-heading">مميزات التطبيق</h2>
                     <hr class="primary">
                 </div>
@@ -221,7 +224,7 @@
     <section id="how-work">
         <div class="container">
              <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center wow bounceInDown" data-wow-duration="2s">
                     <h2 class="section-heading">كيفية الاستخدام</h2>
                     <hr class="primary">
                 </div>
@@ -330,7 +333,7 @@
    <section class="" id="screenshots">
        <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 text-center wow bounceInDown" data-wow-duration="2s">
                     <h2 class="section-heading">معرض الصور</h2>
                     <hr class="primary">
                 </div>
@@ -488,7 +491,7 @@
     <div class="row">
       
 
-        <div class="col-md-6 col-sm-6 pre-footer-col">
+        <div class="col-md-6 col-sm-6 pre-footer-col ">
            
             <address class="margin-bottom-40">
               
@@ -498,10 +501,10 @@
 
             
         </div>
-        <div class="col-md-6 col-sm-6 " style="text-align:left">
+        <div class="col-md-6 col-sm-6" style="text-align:left">
         <p class="scroll-top"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
         
-                 <small>&copy; جميع الحقوق محفوظة - محفظ الوحيين 2015.</small>
+        <small>&copy; جميع الحقوق محفوظة - محفظ الوحيين <span id="year"></span>.</small>
        
       </div>
     </div>
@@ -553,6 +556,9 @@
         
 
     <script>
+        
+        
+       $("#year").html(new Date().getFullYear());
 
         // flex slider
 
