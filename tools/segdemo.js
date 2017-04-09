@@ -33,7 +33,6 @@ $(document).ready(function(){
 
   var update_cookie = function()
   {
-    $.cookie('qaree_id', qaree_select.val(), { expires: 30 });
     $.cookie('sura_id', sura_select.val(), { expires: 30 });
     $.cookie('aya_id', aya_select.val(), { expires: 30 });
     $.cookie('audio_source', audio_source_select.val(), { expires: 30 });
@@ -41,12 +40,10 @@ $(document).ready(function(){
 
   var read_cookie = function()
   {
-    var qaree_id = $.cookie('qaree_id') || 0
     var sura_id = $.cookie('sura_id') || 1
     var aya_id = $.cookie('aya_id') || 1
     var audio_source = $.cookie('audio_source') || 'absolute'
 
-    qaree_select.val(qaree_id)
     set_download_link()
     sura_select.val(sura_id).change()
     aya_select.val(aya_id)
