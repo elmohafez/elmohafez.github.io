@@ -40,10 +40,12 @@ $(document).ready(function(){
 
   var read_cookie = function()
   {
+    var qaree_id = 0
     var sura_id = $.cookie('sura_id') || 1
     var aya_id = $.cookie('aya_id') || 1
     var audio_source = $.cookie('audio_source') || 'absolute'
 
+    qaree_select.val(qaree_id)
     set_download_link()
     sura_select.val(sura_id).change()
     aya_select.val(aya_id)
