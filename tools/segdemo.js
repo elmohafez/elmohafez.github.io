@@ -21,6 +21,7 @@ $(document).ready(function(){
   var load_data_for_qaree = function()
   {
     var qaree_id = qaree_select.val()
+    if (!qaree_id) return
     cues_ready = false
     hashes_ready = false
     if (qaree_audio_is_secure(qaree_id))
@@ -40,10 +41,10 @@ $(document).ready(function(){
 
   var read_cookie = function()
   {
-    var qaree_id = $.cookie('qaree_id') || 1
+    var qaree_id = $.cookie('qaree_id') || 0
     var sura_id = $.cookie('sura_id') || 1
     var aya_id = $.cookie('aya_id') || 1
-    var audio_source = $.cookie('audio_source') || 'local'
+    var audio_source = $.cookie('audio_source') || 'absolute'
 
     qaree_select.val(qaree_id)
     set_download_link()
@@ -71,18 +72,12 @@ $(document).ready(function(){
   player = player.get(0)
   player.autoplay = true
 
-  if (window.location.host != "") {
-    cues_debug.hide()
-    //sync_error.parent().hide()
-    audio_source_select.hide()
-    //auto_advance.hide()
-    audio_source_select.val("remote")
-    //player.controls = false
-  }
-  else {
-    //audio_source_select.val("local")
-    // get from cookie
-  }
+  // cues_debug.hide()
+  //sync_error.parent().hide()
+  // audio_source_select.hide()
+  //auto_advance.hide()
+  audio_source_select.val("absolute")
+  //player.controls = false
 
   // populate suras
   var options = ""
@@ -103,8 +98,8 @@ $(document).ready(function(){
   })
 
   qaree_select.change(function(){
-    if (is_local()) {
-      display_local_audio_instructions()
+    if (audio_is_relative()) {
+      display_relative_audio_instructions()
       set_download_link()
     }
 
@@ -121,11 +116,11 @@ $(document).ready(function(){
     aya_select.empty().append(options)//.change()
   }).change()
 
-  var is_local = function() {
-    return audio_source_select.val() == 'local'
+  var audio_is_relative = function() {
+    return audio_source_select.val() == 'relative'
   }
 
-  var display_local_audio_instructions = function() {
+  var display_relative_audio_instructions = function() {
     var qaree_name = $('option:selected', qaree_select).text().split(" - ")[1]
     var qaree_id = qaree_select.val()
 
@@ -151,8 +146,8 @@ $(document).ready(function(){
   }
 
   audio_source_select.change(function(){
-    if (is_local()) {
-      display_local_audio_instructions()
+    if (audio_is_relative()) {
+      display_relative_audio_instructions()
       set_download_link()
     }
     else {
@@ -164,13 +159,13 @@ $(document).ready(function(){
     update_audio_source(sura_id, aya_id)
   })
 
-  var get_local_url = function(qaree_id, sura_id, aya_id) {
-    var local_file = zero_pad(sura_id) + qaree_sura_aya_sep(qaree_id)
+  var get_relative_url = function(qaree_id, sura_id, aya_id) {
+    var relative_file = zero_pad(sura_id) + qaree_sura_aya_sep(qaree_id)
       + zero_pad(aya_id) + "." + qaree_audio_format(qaree_id)
-    return "../quran-audio/" + qaree_id + "/" + local_file
+    return "../quran-audio/" + qaree_id + "/" + relative_file
   }
 
-  var get_remote_url = function(qaree_id, sura_id, aya_id) {
+  var get_absolute_url = function(qaree_id, sura_id, aya_id) {
     var base_url = qaree_audio_base_url(qaree_id)
     if (qaree_audio_is_secure(qaree_id)) {
       var hash = hashes[sura_id][aya_id]
@@ -184,11 +179,13 @@ $(document).ready(function(){
   
   var update_audio_source = function(sura_id, aya_id){
     var qaree_id = qaree_select.val()
+    if (!qaree_id) return
+
     var url
-    if (is_local())
-      url = get_local_url(qaree_id, sura_id, aya_id)
+    if (audio_is_relative())
+      url = get_relative_url(qaree_id, sura_id, aya_id)
     else
-      url = get_remote_url(qaree_id, sura_id, aya_id)
+      url = get_absolute_url(qaree_id, sura_id, aya_id)
 
     console.log("loading audio from file", url)
     total_highlighted_duration = 0
@@ -345,5 +342,4 @@ $(document).ready(function(){
 
   read_cookie()
   load_data_for_qaree()
-
 })
