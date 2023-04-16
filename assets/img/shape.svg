@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1181" height="316" viewBox="0 0 1181 316">
+    <defs>
+        <filter id="o0znzhv89b" width="123%" height="105.7%" x="-11.5%" y="-2.8%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/>
+            <feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+        </filter>
+        <path id="ndmn2z2sta" d="M686.114-352.55c.02-.351.061-.696.061-1.05 0-12.748-11.738-23.08-26.217-23.08-.98 0-1.947.055-2.9.148-1.74-9.761-8.48-25.592-33.545-30.486-41.905-8.181-46.17-8.017-55.512-23.982-9.344 15.965-13.607 15.8-55.514 23.982-25.065 4.894-31.805 20.725-33.546 30.486-.952-.093-1.918-.148-2.9-.148-14.478 0-26.216 10.332-26.216 23.08 0 .354.043.699.06 1.05-10.43 0-18.885 8.455-18.885 18.885V607.655c0 10.43 8.455 18.886 18.886 18.886-.018.35-.061.696-.061 1.05 0 12.746 11.738 23.08 26.217 23.08.98 0 1.947-.057 2.9-.15 1.74 9.762 8.48 25.593 33.545 30.487 41.907 8.181 46.17 8.017 55.514 23.992 9.342-15.975 13.607-15.81 55.512-23.992 25.065-4.894 31.805-20.725 33.546-30.486.952.092 1.918.148 2.9.148 14.478 0 26.216-10.333 26.216-23.08 0-.353-.041-.7-.06-1.049 10.43 0 18.885-8.455 18.885-18.886V-333.665c0-10.43-8.455-18.886-18.886-18.886z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-128 -673) translate(151.5 694)">
+                <g fill-rule="nonzero" transform="rotate(90 568 137)">
+                    <use fill="#000" filter="url(#o0znzhv89b)" xlink:href="#ndmn2z2sta"/>
+                    <use fill="#F6F5EE" stroke="#D2B06B" stroke-width="2" xlink:href="#ndmn2z2sta"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+/* p {
+  font-family: alegreya-font;
+} */
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+
+.px-6 {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+.px-7 {
+  padding-left: 70px !important;
+  padding-right: 70px !important;
+}
+.mt-6 {
+  margin-top: 60px
+}
+.mt-8 {
+  margin-top: 80px
+}
+.mt-9 {
+  margin-top: 90px
+}
+.mt-11 {
+  margin-top: 170px
+}
+.mt-25 {
+  margin-top: 250px
+}
+.mb-6 {
+  margin-bottom: 60px;
+}
+.my-8 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.size-18 {
+  font-size: 18px;
+}
+/* SVG Animation */
+.iconbox-icon-container > svg {
+    display: inline-block;
+    width: 24px;
+    line-height: 0;
+}
+
+[data-animate-icon=true] .iconbox-icon-container > svg,
+[data-animate-icon=true] .iconbox-icon-container > object {
+    opacity: 0;
+}
+
+[data-animate-icon=true].iconbox-icon-animating .iconbox-icon-container > svg,
+[data-animate-icon=true].iconbox-icon-animating .iconbox-icon-container > object {
+    opacity: 1;
+}
+/* SVG Animation END */
+
+
+.title-color {
+  color: #dcae60;
+}
+.main-info-data-right h4, .main-info-data-left h4, .main-video-info h4 {
+  color: #000;
+}
+
+.app-play-btn img {
+  width: 150px !important;
+  height: 50px;
+  transition: .3s;
+  margin-left: 5px;
+}
+.app-play-btn img:hover {
+  transform: scale(1.03);
+}
+
+ /* Youtube button animation */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(255,255,255, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+    box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 20px rgba(255,255,255, 0);
+      box-shadow: 0 0 0 20px rgba(255,255,255, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+      box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+  }
+} /*Youtube button animation*/
+

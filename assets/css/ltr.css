@@ -1,0 +1,58 @@
+body,
+.btn-ar-model,
+.ar-font,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Header */
+
+/* Header END */
+
+.heading-bg {
+  max-width: 350px;
+  right: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.heading-bg .bg {
+  min-width: 350px;
+  top: -28px;
+  left: 0;
+}
+
+/* Main section */
+.main-section .title-side .plus i {
+  line-height: 28px;
+}
+
+/* Ipad section */
+.ipad-section .ipad-wrapper .ipad-slider-screen .ipad-main-slider {
+  top: 30px;
+  right: auto;
+  left: 47px;
+}
+@media (max-width: 767px) {
+  .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-main-slider {
+    top: 20px;
+    right: auto;
+    left: 29px;
+  }
+}
+
+@media (max-width: 575px) {
+  .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-main-slider {
+    top: 14px;
+    right: auto;
+    left: 16px;
+  }
+}
+/* Ipad section end */

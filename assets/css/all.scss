@@ -1,0 +1,141 @@
+@import "_include-media";
+@import "_variable";
+
+@font-face {
+  font-family: "droid";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/droidkufi/DroidKufi-Regular.eot);
+  src: url(../fonts/droidkufi/DroidKufi-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/droidkufi/DroidKufi-Regular.woff2) format("woff2"), url(../fonts/droidkufi/DroidKufi-Regular.woff) format("woff"),
+    url(../fonts/droidkufi/DroidKufi-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "droid-bold";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/droidkufi/DroidKufi-Bold.eot);
+  src: url(../fonts/droidkufi/DroidKufi-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/droidkufi/DroidKufi-Bold.woff2) format("woff2"), url(../fonts/droidkufi/DroidKufi-Bold.woff) format("woff"),
+    url(../fonts/droidkufi/DroidKufi-Bold.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f6f5ee;
+}
+
+// ar reguler font
+body,
+.btn-ar-model {
+  font-family: "droid";
+}
+
+// ar bold font
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "droid-bold";
+}
+
+// eng font
+.en-font {
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+// ar font
+.ar-font-bold {
+  font-family: "droid-bold" !important;
+}
+.ar-font {
+  font-family: "droid" !important;
+}
+
+// Styles
+a {
+  text-decoration: none;
+}
+
+.rounded {
+  border-radius: 50px !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.reguler {
+  font-weight: normal !important;
+}
+
+.bg-dark-gray {
+  background-color: $darkGray;
+}
+
+.dark-gray {
+  color: $darkGray;
+}
+.orange {
+  color: $orange;
+}
+.green {
+  color: $green;
+}
+.white {
+  color: $white;
+}
+.light-grey {
+  color: $lightGray;
+}
+.font-color {
+  color: $font-color;
+}
+
+.btn-style {
+  background: transparent;
+  color: $darkGray;
+  // border: 1px solid rgba(67, 55, 37, 0.5);
+  color: $white;
+  align-items: center;
+  min-width: 145px;
+  // font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 4px 1px rgba(67, 55, 37, 0.5);
+  transition: all 0.5s;
+  &:hover {
+    color: $white;
+  }
+}
+
+.heading-bg {
+  max-width: 300px;
+  position: relative;
+  right: 50%;
+  transform: translateX(50%);
+  .bg {
+    min-width: 300px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+  }
+  h2 {
+    position: relative;
+  }
+}
+
+@import "_header";
+@import "_main";
+@import "_footer";

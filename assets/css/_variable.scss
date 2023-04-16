@@ -1,0 +1,18 @@
+// Colors
+$white: #ffffff;
+$orange: #d1b271;
+$darkGray: #2e2409;
+
+$snomo: #e5e3d9;
+$lightGray: #433725;
+$gray: #d2b06b;
+$font-color: #847660;
+$green: #0f6e3d;
+
+// flex function
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}

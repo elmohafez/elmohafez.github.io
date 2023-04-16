@@ -1,695 +1,500 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
+    <title>محفظ الوحيين elmohafez</title>
+    <meta name="keywords" content="محفظ, الوحيين, elmohafez, smartech, smartech.online, القرآن, الحفظ, المعين, محفظ الوحيين, تلاوة, ترجمة, تطبيق,  التفسير, quran, koran, qoran, mohaffez" />
+    <meta name="description" content="محفظ الوحيين طريقك لحفظ القرآن الكريم بالقراءات العشر وعشرين رواية، وحفظ السنة النبوية والمتون بطريقة سهلة." />
+    <meta name="distribution" content="global" />
+    <meta name="author" content="author meta here" />
+    <!-- <meta name="theme-color" content="#154d47" /> -->
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="محفظ الوحيين يتيح لك إمكانية حفظ القرآن الكريم بالقراءات بالرسم العثماني والسنة النبوية والمتون بطريقة سهلة. كل ما عليك هو اختيار وقراءة النص وسماعه من القارئ ثم تسجيله بصوتك في حين يختفي النص. بعد الانتهاء من التسجيل يقوم التطبيق بعرض النص مرة أخرى وتشغيل صوتك لكي تطابقه بالصواب. يمكنك متابعة نسبة الحفظ في كل سورة أو كتاب حديث وسماع التسجيل في أي وقت.
-">
+    <!-- Open Graph protocol -->
+    <meta property="og:title" content="محفظ الوحيين elmohafez" />
+    <meta property="og:type" content="Quranic website" />
+    <meta property="og:url" content="https://elmohafez.com" />
+    <meta property="og:image" content="assets/img/icons/favicon/favicon.svg" />
+    <meta property="og:site_name" content="محفظ الوحيين elmohafez" />
+    <meta property="og:description" content="محفظ الوحيين يتيح لك إمكانية حفظ القرآن الكريم بالقراءات بالرسم العثماني والسنة النبوية والمتون بطريقة سهلة." />
 
-    <meta name="Keywords" content="حفظ القران الكريم , محفظ الوحيين , القراءات العشر , المتون , الاحاديث النبوية , الاحاديث , سورة , القران الكريم , القرآن" />
-    <meta name="author" content="">
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icons/favicon/favicon.svg" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/icons/favicon/favicon.svg" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/icons/favicon/favicon.svg" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/icons/favicon/favicon.svg" />
+    <link rel="apple-touch-icon-precomposed" href="assets/img/icons/favicon/favicon.svg" />
 
-  
-  <meta property="og:title" content="محفظ الوحيين">
-  <meta property="og:description" content="يتيح لك إمكانية حفظ القرآن الكريم بالقراءات بالرسم العثماني والسنة النبوية والمتون بطريقة سهلة. كل ما عليك هو اختيار وقراءة النص وسماعه من القارئ ثم تسجيله بصوتك في حين يختفي النص. بعد الانتهاء من التسجيل يقوم التطبيق بعرض النص مرة أخرى وتشغيل صوتك لكي تطابقه بالصواب. يمكنك متابعة نسبة الحفظ في كل سورة أو كتاب حديث وسماع التسجيل في أي وقت">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="img/home.jpg"><!-- link to image for socio -->
-   
-    <title>محفظ الوحيين</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap-arabic.min.css" rel="stylesheet">
-   
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Aos Data Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!-- swiper master -->
+    <link rel="stylesheet" href="assets/swiper-master/css/swiper.min.css" />
+    <!-- Bootstrap 5 -->
+    <link href="assets/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <!-- My Customs Css -->
+    <link rel="stylesheet" href="assets/css/all.css" />
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-    <link href="css/owl-carousel/owl.carousel.css" rel="stylesheet" />
-    <link href="css/owl-carousel/owl.theme.css" rel="stylesheet" />
-
-    <link href="css/flexslider.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/mohafez-css.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<style>
-
-</style>
-<body id="page-top">
-
-    <div class="header ">
-         <div class="bg-mask">
+    <style>
+      /* Aos Animation  */
+      [data-aos] {
+        .services[data-aos-easing="new-easing"],
+        [data-aos][data-aos-easing="new-easing"] {
+          transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+        }
+      }
+    </style>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="150">
+    <!-- Header -->
+    <!-- Language Modal -->
+    <div class="modal top m-2" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <!-- Add class .modal-frame and then add class .modal-top (or other classes from list above) to set a position to the modal -->
+      <div class="modal-dialog modal-frame modal-top" role="document" style="max-width: 100% !important">
+        <div class="modal-content mt-5">
+          <h4 class="h4-responsive text-center mt-4">اختيار اللغة</h4>
+          <div class="modal-body">
+            <a href="index-en.html" class="btn btn-alt en-font rounded">English</a>
+            <a href="index.html" class="btn btn-alt rounded">العربية</a>
+          </div>
         </div>
-    
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      </div>
+    </div>
+    <!-- Language Modal end -->
+    <header id="header" data-aos="fade" data-aos-duration="500">
+      <div class="container px-2" id="navbar-example">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/img/logo.svg" alt="محفظ الوحيين elmohafez" class="img-fluid" />
+          </a>
+        </div>
+        <nav id="nav">
+          <div class="nav-drop">
+            <ul class="p-0 m-0">
+              <li><a class="nav-link active" href="#home">الرئيسية</a></li>
+              <li><a class="nav-link" href="#features">إمکانيات التطبيق</a></li>
+              <li><a class="nav-link" href="#properties">خصائص التطبيق</a></li>
+              <li><a class="nav-link" href="#howToUse">كيفية الاستخدام</a></li>
+              <li><a class="nav-link" href="#contact">تنزيل التطبيق</a></li>
+              <!-- <li><a class="nav-link" href="#contact">اتصل بنا</a></li> -->
+            </ul>
+          </div>
+        </nav>
+        <div>
+          <!-- Button trigger modal -->
+          <button type="button" id="headerBtn" class="btn btn-lg rounded btn-style" data-bs-toggle="modal" data-bs-target="#frameModalTop">
+            <img src="assets/img/icons/world.svg" style="width: 25px" />
+            <span id="btnColor">العربية <i class="fa fa-angle-down"></i></span>
+          </button>
+          <div class="opener-holder">
+            <a href="#" class="nav-opener"><span></span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header END -->
+
+    <section id="wrapper">
+      <!-- MAIN SECTION -->
+      <section id="home" class="main-section" data-aos="fade" data-aos-duration="500">
         <div class="container">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand page-scroll wow bounceIn" data-wow-duration="2s"  href="#page-top">محفظ الوحيين</a>
-  </div>
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
-
-<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse navbar-ex1-collapse">
-  <ul class="nav navbar-nav navbar-right">
-                    
-        <li><a class="page-scroll" href="#home">الرئيسية</a></li>
-        <li><a class="page-scroll" href="#features">إمكانيات التطبيق</a></li>
-        <li><a class="page-scroll" href="#how-work">كيفية الاستخدام</a></li>
-        <li><a class="page-scroll" href="#screenshots">معرض الصور</a></li>
-        <li><a class="page-scroll" href="#reviews">آراء المستخدمين</a></li>
-       <li><a class="page-scroll" href="#reviews"><i class="fa fa-twitter"></i></a></li>
-        <!-- <li><a class="page-scroll" href="#contact">اتصل بنا</a></li> -->
-                     
-       
-                    
-                </ul>
-</div>
-</div><!-- .container -->
-</nav>
-
- <div class="container home" id="home">
-  <div class="row">
-     <div class="col-sm-5 animation slideUp stretchRight">
-         <!--class="wow bounceIn " data-wow-duration="2s" data-wow-delay=".5s"-->
-         <h3 >محفظ الوحيين يتيح لك إمكانية حفظ القرآن الكريم بالقراءات بالرسم العثماني
-والسنة النبوية والمتون بطريقة سهلة.</h3>
-         <!--<div class="wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="1.5s">-->
-       <h4 class="hidden-xs">التطبيق يدعم: </h4>
-              <ul class="hidden-xs">
-                  <li>
-                      القران الكريم ب 15 رواية و 14 قارئ.
-                  </li>
-                  <li>
-                      كتب صحيح البخارى ومسلم وغيرها.
-                  </li>
-                  <li>
-                      كتب المتون كتحفة الأطفال والشاطبية والجزرية والبيقونية وغيرها.
-                  </li>
-              </ul>
-         <!--</div>-->
-         <div class="action-btn">
-             <div class="slider-app2 " onclick="location.href='https://itunes.apple.com/eg/app/elmohafez-tv-mhfz-alwhyyn/id560715467?mt=8';">
-                  <div class="slider-img"><i class="fa fa-apple" style="font-size: 40px;"></i></div>
-                  <div class="app1-txt">Available on<br><strong>App Store</strong></div>
-                </div> 
-            <div class="slider-app2" onclick="location.href='https://play.google.com/store/apps/details?id=net.hammady.android.mohafez';">
-                  <div class="slider-img">
-
-                                        <i class="fa fa-android" style="font-size: 40px;"></i>
+          <div class="row">
+            <div class="col-xl-5 py-4 title-side text-center">
+              <div>
+                <h1 class="h1-brand white" data-aos="fade-up">محفظ الوحيين</h1>
+                <p class="white mt-4" data-aos="fade-down">طريقك لحفظ القرآن الكريم بالقراءات العشر وعشرين رواية، وحفظ السنة النبوية والمتون بطريقة سهلة</p>
+              </div>
+              <div class="download-icon my-2" data-aos="fade-left">
+                <a href="https://play.google.com/store/apps/details?id=net.hammady.android.mohafez" class="mx-2"><img src="assets/img/icons/android.svg" alt="Android" /></a>
+                <a href="https://apps.apple.com/app/id560715467" class="mx-2"><img src="assets/img/icons/ios.svg" alt="iOS" /></a>
+                <a href="http://apps.microsoft.com/windows/en-us/app/mohafez/496b3623-baca-4fb6-be50-a4a9a4db575e" class="mx-2"><img src="assets/img/icons/windows.svg" alt="Windows" /></a>
+              </div>
+              <div>
+              <div class="btn btn-style rounded mt-1 plus" data-bs-toggle="modal" data-bs-target="#exampleModal" data-aos="fade-right">
+                <i>
+                  <img src="assets/img/icons/video.svg" alt="video" />
+                </i>
+                <span>فيديو تعريفي</span>
+              </div>
+              <div class="btn btn-style rounded mt-1 plus" data-aos="fade-left">
+                <a href="downloads/elmohafez-guide.pdf" class="text-white">
+                <i>
+                  <img src="assets/img/icons/file-pdf-regular.svg" alt="pdf" />
+                </i>
+                <span>طريقة الاستخدام</span>
+                </a>
+              </div>
+              <div class="btn btn-style rounded mt-1 plus" data-aos="fade-left">
+                <a href="downloads/elmohafez.pptx" class="text-white">
+                <i>
+                  <img src="assets/img/icons/file-ppt-regular.svg" alt="word" />
+                </i>
+                <span>العرض التقديمي</span>
+                </a>
+              </div>			  
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe id="modelVideo" width="100%" height="100%" src="https://www.youtube.com/embed/n-97plW5IZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                   </div>
-                  <div class="app1-txt">Available on<br><strong>Google Play</strong></div>
                 </div>
-            <div class="slider-app2 store" onclick="location.href='http://www.windowsphone.com/ar-eg/store/app/%D9%85%D8%AD%D9%81%D8%B8-%D8%A7%D9%84%D9%88%D8%AD%D9%8A%D9%8A%D9%86/4eb5e6c6-4be1-484c-8f6b-7e005d3ba9ca';">
-                  <div class="slider-img">
-
-                                        <i class="fa fa-windows" style="font-size: 40px;"></i>
-                  </div>
-                  <div class="app1-txt">Available on<br><strong style="font-size: 12px;">Windows Phone</strong></div>
-                </div>
-
-             <div class="slider-app2 store" onclick="location.href='http://apps.microsoft.com/windows/en-us/app/mohafez/496b3623-baca-4fb6-be50-a4a9a4db575e';">
-                  <div class="slider-img">
-
-                                        <i class="fa fa-windows" style="font-size: 40px;"></i>
-                  </div>
-                  <div class="app1-txt">Available on<br><strong style="font-size: 12px;">Windows Store</strong></div>
-                </div>
-             </div>
-       
-       <div class="video-conatiner wow tada" data-wow-duration="1.5s" data-wow-delay="1.5s">
-								<a class="video-image playVideo" href="#." data-toggle="modal" data-target="#myModal" data-title="Intro Video">
-									<img src="https://i.ytimg.com/vi_webp/2XqYS8Avq2U/maxresdefault.webp" alt="Video">
-									<span><i class="fa fa-play customColor"></i></span>
-								</a>
-								<a class="video-text playVideo robotoLight whiteTxtColor" href="#." data-toggle="modal" data-target="#myModal" data-title="Intro Video">شاهد العرض التقديمي لتطبيق محفظ الوحيين</a>
-							</div>
-
+              </div>
+              <!-- Modal END-->
             </div>
-    <div class="col-xs-7  home_mobile animation bigEntrance slideUp">
-        <!--<img class="img-responsive" src="http://smartdocscanner.com/wp-content/themes/sds/images/sds_mobile.png">-->
-         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
- 
- 
- 
-  <div class="carousel-inner">
-    <div class="item active">
-       <img src="img/windows-phone.png" alt="" class="wow  hero-img">
-    </div>
-    <div class="item">
-      <img src="img/mobile-android.png" alt="" class="wow  hero-img">
-    </div>
-    <div class="item">
-      <img src="img/iphone.png" alt="" class="wow  hero-img">
-      
-    </div>
-    <div class="item">
-      <img src="img/Mackbook.png" alt="" class="wow  hero-img" style="margin: 0px;padding-top: 100px;">
-    </div>
-  </div>
- 
-  
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="fa fa-angle-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="fa fa-angle-right"></span>
-  </a>
-</div> 
-    </div>
-  </div>
-</div>
-   </div>
+            <div class="col-xl-7 py-4 text-center">
+              <img src="assets/img/gather-phone.png" alt="ghather phone" class="img-fluid ghather-phone" data-aos="fade-down" />
+            </div>
+          </div>
+        </div>
+        <div class="main-pettren"></div>
+      </section>
+      <!-- MAIN SECTION END -->
 
-    <section id="features" class="home_feature">
+      <!-- FEATURES SECTION -->
+      <section class="features-section" id="features" data-aos="fade" data-aos-duration="500">
+        <div class="container p-xl-0 text-center" data-aos="fade-up">
+          <div class="shape">
+            <img src="assets/img/shape.svg" alt="" class="img-fluid" />
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-xl-10">
+              <div class="row gy-5">
+                <div class="col-md-6 col-lg-4">
+                  <div class="box text-center p-5 h-100">
+                    <img src="assets/img/quran.svg" alt="quran" />
+                    <h6 class="light-grey my-3">القرآن الكريم</h6>
+                    <p class="font-color">حفظ القرآن الكريم بالروايات عن طريق السماع والتسجيل والمطابقة</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="box text-center p-3 p-xl-5 h-100">
+                    <img src="assets/img/ahadeth.svg" alt="quran" />
+                    <h6 class="light-grey my-3">الأحاديث</h6>
+                    <p class="font-color">إمكانية متابعة حفظ الأحاديث على مستوى الفصول والأبواب والكتب والمصنفات</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="box text-center p-5 h-100">
+                    <img src="assets/img/moton.svg" alt="quran" />
+                    <h6 class="light-grey my-3">المتون</h6>
+                    <p class="font-color">يشمل كتب المتون كتحفة الأطفال والشاطبية والجزرية والبيقونية وغيرها</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FEATURES SECTION END -->
+
+      <!-- PROPERTIES SECTION -->
+      <section class="preoperties-section" id="properties" data-aos="fade-up" data-aos-duration="500">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center wow bounceInDown" data-wow-duration="2s">
-                    <h2 class="section-heading">مميزات التطبيق</h2>
-                    <hr class="primary">
-                </div>
+          <div class="heading-bg">
+            <img src="assets/img/heading-bg.svg" alt="heading" class="bg" data-aos="fade-left" />
+            <h2 class="h2-responsive text-center white" data-aos="fade-right"> خصائص التطبيق </h2>
+          </div>
+          <div class="box-wrapper mt-5">
+            <div class="box text-center" data-hover3d="true">
+              <div class="box-info" data-stacking-factor="3">
+                <img src="assets/img/properties/1.svg" alt="search" />
+                <p class="font-color mt-4">المصحف الشريف بالروايات المختلفة</p>
+              </div>
             </div>
-       
-            <div class="row">
-            
-                <div class="col-lg-4 text-center">
-                    <div class="service-box">
-                        <i class="hi-icon icon_quran wow bounceIn text-primary" data-wow-delay=".1s" style="visibility: visible; -webkit-animation-delay: 0.1s;"></i>
-                        <h3>القرآن الكريم</h3>
-                        <p class="text-muted">حفظ القرآن الكريم بالروايات عن طريق السماع والتسجيل والمطابقة.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="hi-icon icon_hadith wow bounceIn text-primary" data-wow-delay=".2s" style="visibility: visible; -webkit-animation-delay: 0.2s;"></i>
-                        <h3>الأحاديث</h3>
-                        <p class="text-muted">إمكانية متابعة حفظ الأحاديث على مستوى الفصول والأبواب والكتب والمصنفات.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <a href="javascript:void(0);" class="hi-icon icon_mutun  wow bounceIn text-primary"></a>
-                        <h3>المتون</h3>
-                        <p class="text-muted">يشمل كتب المتون كتحفة الأطفال والشاطبية والجزرية والبيقونية وغيرها.</p>
-                    </div>
-                </div>
+            <div class="box text-center" data-hover3d="true">
+              <div class="box-info" data-stacking-factor="3">
+                <img src="assets/img/properties/2.svg" alt="coloring" />
+                <p class="font-color mt-4">تلاوات مشاهيرِ القُرَّاء بالرِّوايات</p>
+              </div>
             </div>
+            <div class="box text-center" data-hover3d="true">
+              <div class="box-info" data-stacking-factor="3">
+                <img src="assets/img/properties/3.svg" alt="recording" />
+                <p class="font-color mt-4">التفاسير الموثوقة وترجمات معاني الآيات بمختلف اللُّغات</p>
+              </div>
+            </div>
+            <div class="box text-center" data-hover3d="true">
+              <div class="box-info" data-stacking-factor="3">
+                <img src="assets/img/properties/4.svg" alt="properties" />
+                <p class="font-color mt-4">الأحاديث النبويةُ النَّصيةُ والصوتيةُ والمتونُ العِلمية</p>
+              </div>
+            </div>
+            <div class="box text-center" data-hover3d="true">
+              <div class="box-info" data-stacking-factor="3">
+                <img src="assets/img/properties/5.svg" alt="repeating" />
+                <p class="font-color mt-4">خاصِّيَّة البحث الفوريّ</p>
+              </div>
+            </div>
+            <div class="box text-center" data-hover3d="true">
+              <div class="box-info" data-stacking-factor="3">
+                <img src="assets/img/properties/6.svg" alt="search" />
+                <p class="font-color mt-4">الاستماع إلى التلاوات مع خاصّيَّة تلوينِ الكلمات في المُصحف</p>
+              </div>
+            </div>
+            <div class="box text-center" data-hover3d="true">
+              <div class="box-info" data-stacking-factor="3">
+                <img src="assets/img/properties/7.svg" alt="coloring" />
+                <p class="font-color mt-4">تَكرار الآيات أوِ الأحاديث أوِ المتون مِن أجْلِ حفظها</p>
+              </div>
+            </div>
+            <div class="box text-center" data-hover3d="true">
+              <div class="box-info" data-stacking-factor="3">
+                <img src="assets/img/properties/8.svg" alt="recording" />
+                <p class="font-color mt-4">تسجيلُ صوتِ المستخدمِ والاستماعُ إليه أو مشاركته</p>
+              </div>
+            </div>
+            <div class="box text-center" data-hover3d="true">
+              <div class="box-info" data-stacking-factor="3">
+                <img src="assets/img/properties/9.svg" alt="properties" />
+                <p class="font-color mt-4">إمكانياتٌ متنوعةٌ للخَتَماتِ والتحكُّمِ بتنبيهاتِها، كخَتمةِ الحفظِ – وخَتمةِ التدبُّرِ – وخَتمةِ المراجعة</p>
+              </div>
+            </div>
+            <div class="box text-center" data-hover3d="true">
+              <div class="box-info" data-stacking-factor="3">
+                <img src="assets/img/properties/10.svg" alt="repeating" />
+                <p class="font-color mt-4">نسخ ومشاركة الآيات والأحاديث بالنَّصِّ أو بالصورة عَبْرَ شبكات التواصل الاجتماعيّ</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    
+        <div class="pettren2-top"></div>
+        <div class="pettren2-bottom"></div>
+      </section>
+      <!-- PROPERTIES SECTION END -->
 
- 
-    <section id="how-work">
+      <!-- Q SECTION -->
+      <!-- <section class="q-section" id="qaf" data-aos="fade-up" data-aos-duration="500">
+        <div class="q-info text-center">
+          <a href="http://qafgroup.net/"><img src="assets/img/q-img/q.svg" alt="qaf" class="img-fluid" /></a>
+          <h6 class="ar-font ar green bold mt-4">مجموعة قاف للدراسات والترجمة والتقنية والنشر</h6>
+          <h6 class="en-font dark-gray bold">Qaf group for research, Translation, Publication & IT Solution</h6>
+        </div>
+        <div class="off-project-swiper" data-aos="fade" data-aos-duration="3000">
+          <h2 class="h2-responsive green text-center my-5" data-aos="fade-up">من مشاريع قاف</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(assets/img/q-img/2.png)">
+                <a href="https://www.mlquran.com/index-ar.html">
+                  <div class="info">
+                    <img src="assets/img/q-img/mushaf-ul-lughat-logo.png" alt="مصحف اللغات" /> <br />
+                    <span>ترجمات موثوقة لمعاني القرآن الكريم، مصمَّمة للطباعة ومتاحة في التطبيق </span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide" style="background-image: url(assets/img/q-img/3.png)">
+                <a href="https://mushafmakkah.com/index-ar.html">
+                  <div class="info">
+                    <img src="assets/img/q-img/mushaf-makkah-logo.png" alt="مصحف مکة" /> <br />
+                    <span>مصحف مكة</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide" style="background-image: url(assets/img/q-img/4.png)">
+                <a href="https://zekr.online">
+                  <div class="info">
+                    <img src="assets/img/q-img/jame-ul-telawat-logo.png" alt="جامع التلاوات" /> <br />
+                    <span>منصة إلكترونية جامعة للتلاوات القرآنية بالروايات المختلفة من خلال الموقع والتطبيق</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide" style="background-image: url(assets/img/q-img/5.png)">
+                <a href="https://www.alquranweb.com/ar">
+                  <div class="info">
+                    <img src="assets/img/q-img/tafaseer-logo.png" alt="جامع التفاسير والترجمات" /> <br />
+                    <span>موسوعة رقمية متكاملة وموثوقة للتفاسير وترجمات معاني القرآن الكريم بجميع لغات العالم</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev1"></div>
+          <div class="swiper-button-next1"></div>
+        </div>
+      </section> -->
+      <!-- Q SECTION END -->
+
+      <!-- IPAD SECTION -->
+      <section class="ipad-section" id="howToUse" data-aos="fade-up" data-aos-duration="500">
         <div class="container">
-             <div class="row">
-                <div class="col-lg-12 text-center wow bounceInDown" data-wow-duration="2s">
-                    <h2 class="section-heading">كيفية الاستخدام</h2>
-                    <hr class="primary">
+          <div class="heading-bg">
+            <img src="assets/img/heading-bg.svg" alt="heading" class="bg" data-aos="fade-left" />
+            <h2 class="h2-responsive text-center white" data-aos="fade-right"> كيفية الاستخدام </h2>
+          </div>
+          <div class="row">
+            <!-- <div class="col-lg-7 text-center p-4 p-sm-5">
+              <img src="assets/img/feature/features.png" class="img-fluid img-1" alt="" />
+            </div> -->
+            <div class="col-lg-12 d-flex align-items-center justify-content-center">
+              <div class="ipad-wrapper">
+                <div class="row d-flex justify-content-center align-items-center m-0">
+                  <div class="col-sm-12 col-lg-7 d-flex justify-content-center align-items-center flex-column">
+                    <img src="assets/img/feature/ipad.png" alt="ipad" class="img-fluid ipad" />
+                    <div class="ipad-slider-screen">
+                      <div class="ipad-main-slider ipad-swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="assets/img/feature/1.jpg" alt="pages" /></div>
+                          <div class="swiper-slide"><img src="assets/img/feature/2.jpg" alt="pages" /></div>
+                          <div class="swiper-slide"><img src="assets/img/feature/3.jpg" alt="pages" /></div>
+                          <div class="swiper-slide"><img src="assets/img/feature/4.jpg" alt="pages" /></div>
+                          <div class="swiper-slide"><img src="assets/img/feature/5.jpg" alt="pages" /></div>
+                          <div class="swiper-slide"><img src="assets/img/feature/6.jpg" alt="pages" /></div>
+                          <div class="swiper-slide"><img src="assets/img/feature/7.jpg" alt="pages" /></div>
+                        </div>
+                      </div>
+                      <!-- Paganation -->
+                      <div class="ipad-swiper-pagination"></div>
+                      <!-- next,prev button -->
+                      <div class="ipad-swiper-button-next">
+                        <span><i class="fas fa-arrow-left"></i></span>
+                      </div>
+                      <div class="ipad-swiper-button-prev">
+                        <span><i class="fas fa-arrow-right"></i></span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-
-<div class="cuttoff-slider">
-              <!-- FLEX SLIDER SETUP -->
-              <div id="main-slider" class="flexslider">
-                <ul class="slides">
-                 
-
-                    <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial18.jpg" alt="How to use"></a>
-                  </li>
-                  <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial17.jpg" alt="How to use"></a>
-                  </li>
-                     <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial16.jpg" alt="How to use"></a>
-                  </li>
-                     <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial13.jpg" alt="How to use"></a>
-                  </li>
-                     <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial12.jpg" alt="How to use"></a>
-                  </li>
-                  <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial11.jpg" alt="How to use"></a>
-                  </li>
-                    <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial10.jpg" alt="How to use"></a>
-                  </li>
-                    <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial8.jpg" alt="How to use"></a>
-                  </li>
-                    <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial7.jpg" alt="How to use"></a>
-                  </li>
-                    <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial6.jpg" alt="How to use"></a>
-                  </li>
-                    <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial4.jpg" alt="How to use"></a>
-                  </li>
-                    <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial2.jpg" alt="How to use"></a>
-                  </li>
-                    <li style="width: 100%; float: left; margin-right: -100%; position: relative;">
-                    <a href="#."><img src="img/how/tutorial1.jpg" alt="How to use"></a>
-                  </li>
-                    <li style="width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;" class="flex-active-slide">
-                    <a href="#."><img src="img/how/tutorial0.jpg" alt="How to use"></a>
-                  </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </ul>
-              <ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul></div> 
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-       
-            </div>
+          </div>
         </div>
-    </section>
-    
+      </section>
+      <!-- IPAD SECTION END -->
 
-
-
-
-<!--app screenshot -->
-
-   <section class="" id="screenshots">
-       <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center wow bounceInDown" data-wow-duration="2s">
-                    <h2 class="section-heading">معرض الصور</h2>
-                    <hr class="primary">
+      <!-- COMMENT SECTION -->
+      <section class="comment-section" data-aos="fade-up" data-aos-duration="500">
+        <div class="swiper-section">
+          <div class="container-fluid">
+            <div class="container mt-5">
+              <div class="right-opacity"></div>
+              <div class="left-opacity"></div>
+              <div class="heading-bg">
+                <img src="assets/img/heading-bg.svg" alt="heading" class="bg" data-aos="fade-left" />
+                <h2 class="h2-responsive text-center white" data-aos="fade-right"> آراء المستخدمين </h2>
+              </div>
+              <div class="comment-swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide comment-swiper-slide" data-hover3d="true">
+                    <div class="box" data-stacking-factor="2">
+                      <div class="swiper-info">
+                        <div class="avator">
+                          <img src="https://lh3.googleusercontent.com/-U1r65UCKLGQ/AAAAAAAAAAI/AAAAAAAAATc/Uj1O_TnsLoU/w48-c-h48-rw/photo.jpg" alt="avator" class="img-fluid" />
+                        </div>
+                        <h5 class="h5-responsive light-grey mt-4">أبو يحيى برهان الدين</h5>
+                        <p class="light-grey mt-3">
+                          جزاكم الله خيرا جزى الله القائمين على هذا التطبيق خير الجزاء و غفر الله لوالديهم و تقبل منهم و جعله في ميزان حسناتهم. اللهم آمين. التطبيق رائع و مفيد جدا و أنصح كل مسلم و مسلمة بتحميله و البدء بحفظ كتاب الله و لو آية واحدة في اليوم.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide comment-swiper-slide" data-hover3d="true">
+                    <div class="box" data-stacking-factor="2">
+                      <div class="swiper-info">
+                        <div class="avator">
+                          <img src="https://lh6.googleusercontent.com/-b5KfAVWBBdc/AAAAAAAAAAI/AAAAAAAAACk/3CoGRwFBM3Q/w48-c-h48-rw/photo.jpg" alt="avator" class="img-fluid" />
+                        </div>
+                        <h5 class="h5-responsive light-grey mt-4">أبو سندس</h5>
+                        <p class="light-grey mt-3">انصح به برنامج جدا ممتاز واستفدت منه كثيرا. جزى الله خيرا صاحبه وادخله جنة النعيم.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide comment-swiper-slide" data-hover3d="true">
+                    <div class="box" data-stacking-factor="2">
+                      <div class="swiper-info">
+                        <div class="avator">
+                          <img src="https://lh6.googleusercontent.com/-5viIbmunt4s/AAAAAAAAAAI/AAAAAAAAAUw/mg-GJEusHEU/w48-c-h48-rw/photo.jpg" alt="avator" class="img-fluid" />
+                        </div>
+                        <h5 class="h5-responsive light-grey mt-4 en-font">Abo 7med khelo</h5>
+                        <p class="light-grey mt-3">جزاكم الله كل خير، رائع و بسيط و مميز بأدواته و الإضافات المميزة... أحسنتم.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <!-- <div class="comment-swiper-pagination"></div> -->
+
+                <div class="comment-swiper-button-next">
+                  <span><i class="fas fa-arrow-left"></i></span>
+                </div>
+                <div class="comment-swiper-button-prev">
+                  <span><i class="fas fa-arrow-right"></i></span>
+                </div>
+              </div>
             </div>
-
-
-
-           
-
-      
-            <div class="row no-gutter">
-
-
-
-
-              
-                
-                        <div id="gallery-slider">
-          
-  <div class="item"><img src="img/portfolio/1.jpg" alt="Owl Image"></div>
-  <div class="item"><img src="img/portfolio/2.jpg" alt="Owl Image"></div>
-  <div class="item"><img src="img/portfolio/3.jpg" alt="Owl Image"></div>
-  <div class="item"><img src="img/portfolio/4.jpg" alt="Owl Image"></div>
-  <div class="item"><img src="img/portfolio/5.jpg" alt="Owl Image"></div>
-  <div class="item"><img src="img/portfolio/6.jpg" alt="Owl Image"></div>
-
- 
-</div>
-
-
-
-<style type="text/css">
-#gallery-slider .item{
-  margin: 3px;
-}
-#gallery-slider .item img{
-  display: block;
-  width: 100%;
-  height: auto;
-}</style>
-            </div>
-       
-       </div>
+          </div>
+        </div>
+      </section>
+      <!-- COMMENT SECTION END -->
     </section>
 
- <!--app screenshot end --> 
+    <!-- Download Section -->
+    <section class="download-section">
+      
+    </section>
+    <!-- Download Section EBD -->
 
-
-
-<!--reviews-->
-
-<section class="reviews gray section-spacing text-center" id="reviews">
-  <div class="container">
-   <div class="row">
-    <div class="tweet col-md-6">
-        <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">آخر التغريدات</h2>
-                    <hr class="primary">
-                </div>
-        <h2></h2>
-     <!--   <div class="twitter-icon"> <i class="fa fa-twitter"></i> </div>-->
-             <a class="twitter-timeline" href="https://twitter.com/elmohafezapp" data-widget-id="602768628208009216">Tweets by @elmohafezapp</a>
-<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
-
+    <!-- FOOTER -->
+    <footer id="contact" data-aos="fade" data-aos-duration="500">
+      <div class="footer-bg py-3">
+        <h4 class="h4-responsive text-center white my-3" data-aos="fade-left">حمل التطبيق الآن</h4>
+        <div class="text-center">
+          <a href="#"><img src="assets/img/footer-logo.svg" alt="footer-logo" class="img-fluid" data-aos="fade-up" data-aos-duration="1500" /></a>
         </div>
-          <div class="col-md-6">
-              <div class=" text-center">
-                    <h2 class="section-heading">      آراء المستخدمين
-</h2>
-                    <hr class="primary">
-                </div>
-             <!--  <div class="text-center">
-    </div>-->
-        <div class="review-slider" id="Div1"> 
-          <!--review 2-->
-          <div class="item">
-            <blockquote class="col-md-12 center-block">
-              <figure> <img src="https://lh6.googleusercontent.com/-5viIbmunt4s/AAAAAAAAAAI/AAAAAAAAAUw/mg-GJEusHEU/w48-c-h48-rw/photo.jpg" data-at2x="img/review-2@2x.jpg" alt="user" class="img-circle"> </figure>
-              <p> <i class="fa fa-quote-left"></i>جزاكم الله كل خير رائع و بسيط و مميز بادواته و الإضافات المميزة... احسنتم.<i class="fa fa-quote-right"></i></p>
-              <cite>Abo 7med khelo</cite> </blockquote>
-          </div>
-          <!--review 2 end-->
-
-          <!--review 1-->
-          <div class="item">
-            <blockquote class="col-md-12 center-block">
-              <figure> <img src="https://lh3.googleusercontent.com/-U1r65UCKLGQ/AAAAAAAAAAI/AAAAAAAAATc/Uj1O_TnsLoU/w48-c-h48-rw/photo.jpg" data-at2x="img/review-1@2x.jpg" alt="user" class="img-circle"> </figure>
-              <p> <i class="fa fa-quote-left"></i>جزاكم الله خيرا جزى الله القائمين على هذا التطبيق خير الجزاء و غفر الله لوالديهم و تقبل منهم و جعله فى ميزان حسناتهم. اللهم آمين. التطبيق رائع و مفيد جدا و انصح كل مسلم و مسلمة بتحميله و البدء بحفظ كتاب الله و لو آية واحدة فى اليوم.<i class="fa fa-quote-right"></i></p>
-              <cite>أبو يحيى برهان الدين</cite> </blockquote>
-          </div>
-          <!--review 1 end--> 
-          
-          <!--review 3-->
-          <div class="item">
-            <blockquote class="col-md-12 center-block">
-              <figure> <img src="https://lh6.googleusercontent.com/-b5KfAVWBBdc/AAAAAAAAAAI/AAAAAAAAACk/3CoGRwFBM3Q/w48-c-h48-rw/photo.jpg" data-at2x="img/review-3@2x.jpg" alt="user" class="img-circle"> </figure>
-              <p> <i class="fa fa-quote-left"></i>انصح به برنامج جدا ممتاز واستفدت منه كثير. جزء الله خيرا صاحبه وادخله جنة النعيم.<i class="fa fa-quote-right"></i></p>
-              <cite>أبو سندس</cite> </blockquote>
-          </div>
-          <!--review 3 end--> 
+        <div class="download-app text-center my-3">
+          <a href="https://play.google.com/store/apps/details?id=net.hammady.android.mohafez"> <img src="assets/img/play-store.svg" alt="GooglePlay-store" class="img-fluid" /></a>
+          <a href="https://apps.apple.com/app/id560715467"><img src="assets/img/app-store.svg" alt="App-store" class="img-fluid" /></a>
+		  <a href="http://apps.microsoft.com/windows/en-us/app/mohafez/496b3623-baca-4fb6-be50-a4a9a4db575e"><img src="assets/img/windows-store.svg" alt="Windows-store" class="img-fluid" /></a>
+        </div>
+        <div class="footer-icon text-center">
+          <a
+            target="_blank"
+            href="https://mobile.twitter.com/elmohafezapp"
+            ><img src="assets/img/icons/socail/twitter.svg" alt="twitter" class="img-fluid"
+          /></a>
+          <a href="https://www.facebook.com/appislamc/"><img src="assets/img/icons/socail/facebook.svg" alt="facebook" class="img-fluid" /></a>
+          <a href="https://www.youtube.com/channel/UCo-PziwIOXP5xGI2PJb4pdQ/featured"><img src="assets/img/icons/socail/youtube.svg" alt="youtube" class="img-fluid" /></a>
           
         </div>
       </div>
-        </div>
-    </div>
-  <!--</div>-->
-</section>
-
-<!--reviews end--> 
-
-
-
-<!--CONTACT-->
-<!-- 
-<section class="contact section-spacing" id="contact">
-  <div class="container">
-
-      <div class="row">
-      <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">اتصل بنا</h2>
-                    <hr class="primary">
-                </div>
-          </div>
-     <div class="row">
-    
-        <div class="col-md-6 center-block"> 
-                
-        <div class="contact-form">
-          <form role="form" action="php/contact-me.php" method="post" id="contact-form">
-            <input type="text" class="form-control" name="name" id="name" placeholder="الاسم" required="">
-            <input type="email" class="form-control" name="email" id="email" placeholder="البريد الالكترونى" required="">
-              <input type="text" class="form-control" name="message-title" id="message-title" placeholder="موضوع الرسالة" required="">
-            <textarea class="form-control" name="message" id="message" rows="4" placeholder="اترك تعليقا" required=""></textarea>
-            <button type="submit" class="btn btn-default submit-btn" id="submit-btn" value="ارسال">ارسال</button>
-          </form>
-          <div class="success-cf">
-            <p><i class="fa fa-envelope"></i> شكرا لك! تم ارسال رسالتك بنجاح.</p>
-          </div>
-          <div class="error-cf">
-            <p><i class="fa fa-exclamation-triangle"></i> عذرا لقد حدث خطأ ما, تاكد من ان البيانات صحيحة .</p>
-          </div>
-        </div>
-        
+      <div class="py-4 px-2 bg-dark-gray">
+        <h6 class="text-center white en-font">الشركة المطورة <a target="_blank" href="https://smartech.online/" class="bold orange">Smartech.online</a></h6>
+        <a target="_blank" href="https://smartech.online/"><img src="assets/img/smartech-logo.png" alt="smartech-logo" class="img-fluid smart-logo" /></a>
       </div>
-    </div>
-  </div>
-</section>
- -->
-<!--CONTACT END--> 
+    </footer>
+    <!-- FOOTER END -->
 
-  
-<!--site-footer-->
-<footer class="site-footer section-spacing">
-  <div class="container">
-    <div class="row">
-      
+    <!--////////////////////////// JavaScripts -->
+    <!-- aos data Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <div class="col-md-6 col-sm-6 pre-footer-col ">
-           
-            <address class="margin-bottom-40">
-              
-             الدعم الفني: <a href="mailto:support@elmohafez.com">support@elmohafez.com </a><br>
-              تابعنا على تويتر: <a target="_blank" href="http://twitter.com/elmohafezapp">@elmohafezapp</a>
-            </address>
+    <!-- vendors js (For Hover Movement And Svg Animation) -->
+    <script src="assets/js/vendors/vendors.min.js"></script>
+    <script src="assets/js/vendors/main.min.js"></script>
 
-            
-        </div>
-        <div class="col-md-6 col-sm-6" style="text-align:left">
-        <p class="scroll-top"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
-        
-        <small>&copy; جميع الحقوق محفوظة - محفظ الوحيين <span id="year"></span>.</small>
-       
-      </div>
-    </div>
-  </div>
-</footer>
-<!--site-footer end--> 
+    <!-- swiper master -->
+    <script src="assets/swiper-master/js/swiper.min.js"></script>
 
-
-
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-      
-    <!-- Modal content-->
-    <div class="modal-content">
-      
-      <div class="modal-body">
-          <div class="videoWrapper">
-              
-             <iframe width="760" height="515" src="https://www.youtube.com/embed/2XqYS8Avq2U" frameborder="0" allowfullscreen></iframe>
-          </div>
-      </div>
-      
-    </div>
-
-  </div>
-</div>
-
-
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-    <script src="js/owl-carousel/owl.carousel.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-
-        
+    <!-- My Local Scripts -->
+    <script src="assets/js/script.js"></script>
 
     <script>
-        
-        
-       $("#year").html(new Date().getFullYear());
-
-        // flex slider
-
-        if ($('#main-slider').length) {
-            
-            $('#main-slider').flexslider({
-              
-                animation: "fade",
-                directionNav: true,
-                controlNav: false,
-               
-                pauseOnHover: true,
-                direction: "horizontal"
-
-                
-            
-
-            });
-        };
-         $("#gallery-slider").owlCarousel({
-   
-             rtl: true,
-             loop: true,
-             margin: 10,
-             nav: true,
-             responsive: {
-                 0: {
-                     items: 1
-                 },
-                 600: {
-                     items: 2
-                 },
-                 1000: {
-                     items: 3
-                 }
-             }
- 
-  });
-        $('.review-slider').owlCarousel({
-            items: 1,
-            rtl: true,
-            loop: true,
-            margin: 10,
-            nav: true,
-
-            margin: 80,
-            callbacks: true,
-            URLhashListener: true,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true
-            //responsive: {
-            //    0: {
-            //        items: 1
-            //    },
-            //    600: {
-            //        items: 3
-            //    },
-            //    1000: {
-            //        items: 5
-            //    }
-            //}
-        })
+      AOS.init({
+        // offset: 300,
+        duration: 1000,
+        once: true,
+      });
     </script>
-    <script>
-        $('.carousel').carousel({
-            interval: 5000
-        });
-
-
- 
- 
- 
-
-        /* ==========================================================================
-   App screenshot slider
-   ========================================================================== */
-
-        //$(".screenshot-slider").owlCarousel({
-          //  autoPlay: 3000, //Set AutoPlay speed
-            //items: 4,
-            //itemsDesktop: [1199, 3],
-            //itemsDesktopSmall: [979, 3]
-        //});
-
-
- 
-</script>
-
-    <script>
-
-
-    
-
-        /**
-* Carousel
-*/
-        
-            $('#owl-gallery').owlCarousel({
-                items : 5,
-                itemsDesktop : [1199,5],
-                itemsDesktopSmall : [980,5],
-                itemsTablet: [768,5],
-                itemsTabletSmall: [550,2],
-                itemsMobile : [480,2],
-            });
-       
-
-       
-
-           </script>
-
-    <script type="text/javascript">var switchTo5x = true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
-
-
-<script type="text/javascript">stLight.options({ publisher: "19390140-b1a5-4ce4-a65b-e66251de1199", doNotHash: false, doNotCopy: false, hashAddressBar: false });</script>
-<script>
-    var options = { "publisher": "19390140-b1a5-4ce4-a65b-e66251de1199", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0 }, "chicklets": { "items": ["facebook", "twitter", "linkedin", "googleplus"] } };
-    var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
-</script>
-</body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-64311361-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+  </body>
 </html>
