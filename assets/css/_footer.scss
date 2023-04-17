@@ -1,6 +1,9 @@
 footer {
   overflow: hidden;
   .footer-bg {
+    // .half {
+    //   width: 40%;
+    // }
     background-color: $lightGray;
     .download-app {
       a {
@@ -13,6 +16,7 @@ footer {
         }
       }
     }
+
     .footer-icon {
       img {
         margin: 10px 5px;
@@ -24,12 +28,27 @@ footer {
       }
     }
   }
-  .smart-logo {
-    display: block;
-    margin: 18px auto;
-    max-width: 150px;
+  .bg-dark-gray {
+    text-align: start;
+    p {
+      color: #b3b3b3;
+      font-weight: bold;
+      a {
+        color: #ebcf7b;
+      }
+    }
+
+    .smart-logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 150px;
+    }
   }
+
   @include media("<=576px") {
+    .bg-dark-gray {
+      text-align: center;
+    }
     .footer-bg {
       .download-app {
         a {
