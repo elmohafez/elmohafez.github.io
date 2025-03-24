@@ -16,3 +16,8 @@ $green: #0f6e3d;
   align-items: center;
   flex-direction: $direction;
 }
+
+.bg-btn-green {
+  background-color: #0f6e3d !important;
+  box-shadow: 0 0 4px 4px rgba(209, 178, 113, 0.1) !important;
+}
