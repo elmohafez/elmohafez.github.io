@@ -4,6 +4,19 @@
   box-shadow: 0 0 4px 4px rgba(209, 178, 113, 0.1) !important;
 }
 
+.btn-style.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-share {
+  min-height: 100px;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 @font-face {
   font-family: "droid";
   font-style: normal;
@@ -232,6 +245,9 @@ a {
 }
 
 @media (max-width: 992px) {
+  .btn-style {
+    min-width: 100px;
+  }
   .modal {
     margin: 0 !important;
   }
@@ -246,7 +262,8 @@ a {
   }
   #header .container .opener-holder {
     display: inline-block;
-    padding: 0 25px 0 0;
+    position: relative;
+    top: 10px;
   }
   #header .container .opener-holder .nav-opener {
     position: relative;
@@ -663,16 +680,17 @@ a {
   transform: translateX(-50%);
 }
 .ipad-section .ipad-wrapper .ipad-slider-screen {
-  width: 750px;
-  height: 450px;
+  width: 783px;
+  height: 421px;
 }
 .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-main-slider {
   position: relative;
-  width: 650px;
-  height: 402px;
-  top: 30px;
-  right: 40px;
+  width: 627px;
+  height: 418px;
+  top: 25px;
+  right: 78px;
   overflow: hidden;
+  border-radius: 10px;
 }
 .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-main-slider .swiper-wrapper {
   position: relative;
@@ -777,10 +795,10 @@ a {
     height: 320px;
   }
   .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-main-slider {
-    width: 440px;
-    height: 275px;
-    top: 20px;
-    right: 25px;
+    width: 405px;
+    height: 285px;
+    top: 16px;
+    right: 48px;
   }
   .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-swiper-button-next,
   .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-swiper-button-prev {
@@ -823,10 +841,10 @@ a {
     height: 200px;
   }
   .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-main-slider {
-    width: 270px;
-    height: 168px;
-    top: 14px;
-    right: 15px;
+    width: 255px;
+    height: 179px;
+    top: 8px;
+    right: 23px;
   }
   .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-swiper-button-next,
   .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-swiper-button-prev {
@@ -1243,6 +1261,10 @@ html[dir=rtl] .video-gallery input[type=radio]:checked + label::before {
     width: 100%;
   }
 }
+.donate-img {
+  max-width: 250px;
+}
+
 @media (max-width: 1400px) {
   .gallary-section {
     padding: 80px 0 270px 0;
@@ -1330,6 +1352,15 @@ html[dir=rtl] .video-gallery input[type=radio]:checked + label::before {
       height: 56vw;
       opacity: 1;
     }
+  }
+}
+@media (max-width: 576px) {
+  .btn-share {
+    min-width: 80px;
+    min-height: 80px;
+  }
+  .donate-img {
+    max-width: 170px;
   }
 }
 footer {

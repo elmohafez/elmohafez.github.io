@@ -321,15 +321,16 @@
     .ipad-slider-screen {
       // position: relative;
       // width: 550px;
-      width: 750px;
-      height: 450px;
+      width: 783px;
+      height: 421px;
       .ipad-main-slider {
         position: relative;
-        width: 650px;
-        height: 402px;
-        top: 30px;
-        right: 40px;
+        width: 627px;
+        height: 418px;
+        top: 25px;
+        right: 78px;
         overflow: hidden;
+        border-radius: 10px;
         .swiper-wrapper {
           position: relative;
           display: flex;
@@ -450,10 +451,10 @@
         width: 500px;
         height: 320px;
         .ipad-main-slider {
-          width: 440px;
-          height: 275px;
-          top: 20px;
-          right: 25px;
+          width: 405px;
+          height: 285px;
+          top: 16px;
+          right: 48px;
         }
         .ipad-swiper-button-next,
         .ipad-swiper-button-prev {
@@ -506,10 +507,10 @@
         width: 300px;
         height: 200px;
         .ipad-main-slider {
-          width: 270px;
-          height: 168px;
-          top: 14px;
-          right: 15px;
+          width: 255px;
+          height: 179px;
+          top: 8px;
+          right: 23px;
         }
         .ipad-swiper-button-next,
         .ipad-swiper-button-prev {
@@ -963,6 +964,9 @@ html[dir="rtl"] .video-gallery input[type="radio"]:checked + label::before {
     width: 100%;
   }
 }
+.donate-img {
+  max-width: 250px;
+}
 
 @media (max-width: 1400px) {
   .gallary-section {
@@ -1056,5 +1060,14 @@ html[dir="rtl"] .video-gallery input[type="radio"]:checked + label::before {
       height: 56vw;
       opacity: 1;
     }
+  }
+}
+@media (max-width: 576px) {
+  .btn-share {
+    min-width: 80px;
+    min-height: 80px;
+  }
+  .donate-img {
+    max-width: 170px;
   }
 }

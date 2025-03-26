@@ -21,3 +21,16 @@ $green: #0f6e3d;
   background-color: #0f6e3d !important;
   box-shadow: 0 0 4px 4px rgba(209, 178, 113, 0.1) !important;
 }
+
+.btn-style.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-share {
+  min-height: 100px;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

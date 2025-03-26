@@ -144,7 +144,7 @@ var swiper = new Swiper(".ipad-swiper-container", {
   direction: "horizontal",
   grabCursor: true,
   loop: true,
-  autoplay: true,
+  // autoplay: true,
   speed: 1000,
   pagination: {
     el: ".ipad-swiper-pagination",

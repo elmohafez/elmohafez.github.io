@@ -36,23 +36,23 @@ a {
 
 /* Ipad section */
 .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-main-slider {
-  top: 30px;
+  /* top: 30px; */
   right: auto;
-  left: 47px;
+  left: 78px;
 }
 @media (max-width: 767px) {
   .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-main-slider {
-    top: 20px;
+    /* top: 20px; */
     right: auto;
-    left: 29px;
+    left: 48px;
   }
 }
 
 @media (max-width: 575px) {
   .ipad-section .ipad-wrapper .ipad-slider-screen .ipad-main-slider {
-    top: 14px;
+    /* top: 14px; */
     right: auto;
-    left: 16px;
+    left: 23px;
   }
 }
 /* Ipad section end */
