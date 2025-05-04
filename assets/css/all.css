@@ -1408,4 +1408,238 @@ footer .bg-dark-gray .smart-logo {
     height: auto;
     width: 140px;
   }
+}
+
+/* Timeline Styling */
+.timeline-container {
+  position: relative;
+  padding: 3rem 0;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #e0e0e0;
+  top: 0;
+  bottom: 0;
+  right: 50%;
+  margin-right: -3px;
+  border-radius: 10px;
+  z-index: -2;
+}
+
+.timeline-step {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.timeline-step:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-content-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 1.5rem;
+  /* border-radius: 20px; */
+  /* background: #fff; */
+  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease; */
+  z-index: 2;
+}
+
+.timeline-content h4 {
+  font-size: 40px;
+}
+
+.timeline-content p {
+  font-size: 20px;
+}
+
+/* .timeline-content:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        } */
+.timeline-content.left {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.timeline-content.right {
+  margin-right: auto;
+  margin-left: 5%;
+}
+
+.timeline-image-container {
+  position: relative;
+  width: 45%;
+  padding: 1.5rem;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease; */
+  z-index: 2;
+}
+
+/* .timeline-image-container:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        } */
+.timeline-image-container.left {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.timeline-image-container.right {
+  margin-right: auto;
+  margin-left: 5%;
+}
+
+.timeline-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.timeline-image-container:hover .timeline-image {
+  transform: scale(1.05);
+}
+
+.timeline-icon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 50%;
+  background: #f8f9fa;
+  border: 5px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f6e3d;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.timeline-step.active .timeline-icon {
+  background: #0f6e3d;
+  border-color: #d1b271;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(21, 77, 71, 0.5);
+}
+
+.timeline-step.active + .timeline-step .timeline-icon {
+  border-top-color: #d1b271;
+}
+
+.timeline-step-number {
+  background: #0f6e3d;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 4;
+  font-size: 25px;
+  border: 2px solid #d1b271;
+  margin-bottom: 5px;
+}
+
+/* Progress fill for timeline */
+.timeline-progress {
+  position: absolute;
+  width: 6px;
+  background-color: #0f6e3d;
+  top: 0;
+  right: 50%;
+  margin-right: -3px;
+  border-radius: 10px;
+  z-index: 1;
+  height: 0;
+  transition: height 0.5s ease;
+  z-index: -1;
+}
+
+/* Button Styling */
+.btn-style {
+  padding: 0.8rem 2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-style:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bg-btn-green {
+  background-color: #0f6e3d;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .timeline::after {
+    right: 31px;
+  }
+  .timeline-content-container {
+    flex-direction: column;
+  }
+  .timeline-content,
+  .timeline-image-container {
+    width: calc(100% - 60px);
+    margin-right: 30px !important;
+    margin-left: 0 !important;
+  }
+  .timeline-icon {
+    right: 31px;
+    transform: translateX(50%);
+  }
+  .timeline-step-number {
+    width: 30px;
+    height: 30px;
+    right: 31px;
+    border-width: 1px;
+  }
+  .timeline-progress {
+    right: 31px;
+  }
+  .timeline-icon {
+    width: 55px;
+    height: 55px;
+    border-width: 2px;
+  }
+  .timeline-icon .fa-2x {
+    font-size: 1.5rem;
+  }
+  .timeline-content h4 {
+    font-size: 30px;
+  }
+  .timeline-image {
+    display: inline;
+  }
 }/*# sourceMappingURL=all.css.map */

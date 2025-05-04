@@ -12,7 +12,6 @@
         content="محفظ الوحيين طريقك لحفظ القرآن الكريم بالقراءات العشر وعشرين رواية، وحفظ السنة النبوية والمتون بطريقة سهلة." />
     <meta name="distribution" content="global" />
     <meta name="author" content="author meta here" />
-    <!-- <meta name="theme-color" content="#154d47" /> -->
 
     <!-- Open Graph protocol -->
     <meta property="og:title" content="محفظ الوحيين elmohafez" />
@@ -30,27 +29,17 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/icons/favicon/favicon.svg" />
     <link rel="apple-touch-icon-precomposed" href="assets/img/icons/favicon/favicon.svg" />
 
-    <!-- Aos Data Animation Library -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <!-- swiper master -->
     <link rel="stylesheet" href="assets/swiper-master/css/swiper.min.css" />
     <!-- Bootstrap 5 -->
     <link href="assets/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <!-- My Customs Css -->
     <link rel="stylesheet" href="assets/css/all.css" />
 
-    <style>
-        /* Aos Animation  */
-        [data-aos] {
-
-            .services[data-aos-easing="new-easing"],
-            [data-aos][data-aos-easing="new-easing"] {
-                transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
-            }
-        }
-    </style>
     <script>
         (function (i, s, o, g, r, a, m) {
             i["GoogleAnalyticsObject"] = r;
@@ -69,16 +58,152 @@
         ga("create", "UA-64311361-1", "auto");
         ga("send", "pageview");
     </script>
-    <script>
-        fetch("https://cors-anywhere.herokuapp.com/https://www.youtube.com").then((response) => {
-            // console.log(response);
-            res.header("Access-Control-Allow-Origin", "*");
-        });
-    </script>
 </head>
 
 <body>
+    <!-- Header Section -->
+    <header style="background: rgb(67, 55, 37); border-bottom: 2px solid rgb(209, 178, 113);">
+        <div class="container px-2 d-flex align-items-center justify-content-between py-2" id="navbar-example">
+            <div class="d-flex align-items-center">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.svg" alt="محفظ الوحيين elmohafez" class="img-fluid" />
+                    </a>
+                </div>
+                <div class="nav-drop navbar">
+                    <a class="nav-link text-white" href="index.html">الرئيسية</a>
+                </div>
+            </div>
+            <div>
+                <a href="https://www.launchgood.com/v4/campaign/mohafez_campaign" target="_blank"
+                    class="text-white btn btn-style rounded mt-1 plus bg-btn-green btn-lg">
+                    تبرع
+                </a>
+            </div>
+        </div>
+    </header>
 
+    <!-- Timeline Section -->
+    <section class="py-5 mt-5 overflow-hidden timeline-container">
+        <div class="container">
+            <!-- Timeline Progress Fill -->
+            <div class="timeline-progress" id="timeline-progress"></div>
+
+            <!-- Timeline Structure -->
+            <div class="timeline">
+                <!-- Step 1 -->
+                <div class="timeline-step" id="step-1" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fas fa-credit-card fa-2x"></i>
+                    </div>
+                    <div class="timeline-content-container">
+                        <div class="timeline-content left">
+                            <div class="timeline-step-number">1</div>
+                            <h4 class="mb-3">طريقة دفع المبلغ</h4>
+                            <p class="mb-4">اضغط على تبرع</p>
+                            <div class="d-flex gap-3 mt-4">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#donateModal"
+                                    class="btn btn-style rounded mt-1 plus btn-secondary">
+                                    المشاركة
+                                </button>
+                                <a target="_blank" href="https://www.launchgood.com/v4/campaign/mohafez_campaign"
+                                    class="text-white btn btn-style rounded mt-1 plus bg-btn-green">
+                                    تبرع
+                                </a>
+                            </div>
+                        </div>
+                        <div class="timeline-image-container right">
+                            <img src="assets/img/feature/d1.png" alt="طريقة الدفع" class="timeline-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step" id="step-2" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fas fa-calculator fa-2x"></i>
+                    </div>
+                    <div class="timeline-content-container">
+
+                        <div class="timeline-content left">
+                            <div class="timeline-step-number">2</div>
+                            <h4 class="mb-3">اختيار المبلغ</h4>
+                            <p class="mb-4">اختر المبلغ المطلوب لدعم المحفظ</p>
+                        </div>
+                        <div class="timeline-image-container right">
+                            <img src="assets/img/feature/d2.webp" alt="اختيار المبلغ" class="timeline-image">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step" id="step-3" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fas fa-exclamation-circle fa-2x"></i>
+                    </div>
+                    <div class="timeline-content-container">
+                        <div class="timeline-content left">
+                            <div class="timeline-step-number">3</div>
+                            <h4 class="mb-3">تنبيه:</h4>
+                            <p class="mb-4">قم بتغيير المبلغ الذي تدفع لدعم منصة <a
+                                    href="https://www.launchgood.com/v4/campaign/mohafez_campaign"
+                                    target="_blank">launchgood</a></p>
+
+                        </div>
+                        <div class="timeline-image-container right">
+                            <img src="assets/img/feature/d1.webp" alt="تنبيه" class="timeline-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-step" id="step-4" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fas fa-wallet fa-2x"></i>
+                    </div>
+                    <div class="timeline-content-container">
+                        <div class="timeline-content left">
+                            <div class="timeline-step-number">4</div>
+                            <h4 class="mb-3">طريقة الدفع</h4>
+                            <p class="mb-4">اختر طريقة الدفع</p>
+
+                        </div>
+                        <div class="timeline-image-container right">
+                            <img src="assets/img/feature/d4.png" alt="طريقة الدفع" class="timeline-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="timeline-step" id="step-5" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fas fa-check-circle fa-2x"></i>
+                    </div>
+                    <div class="timeline-content-container">
+                        <div class="timeline-content left">
+                            <div class="timeline-step-number">5</div>
+                            <h4 class="mb-3">إتمام التبرع</h4>
+                            <p class="mb-4">اضغط على زر الدفع في أسفل الصفحة لدفع المبلغ</p>
+                            <div class="d-flex gap-3 mt-4">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#donateModal"
+                                    class="btn btn-style rounded mt-1 plus btn-secondary">
+                                    المشاركة
+                                </button>
+                                <a target="_blank" href="https://www.launchgood.com/v4/campaign/mohafez_campaign"
+                                    class="text-white btn btn-style rounded mt-1 plus bg-btn-green">
+                                    تبرع
+                                </a>
+                            </div>
+                        </div>
+                        <div class="timeline-image-container right">
+                            <img src="assets/img/feature/d5.png" alt="إتمام التبرع" class="timeline-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Donate Modal -->
     <div class="modal" tabindex="-1" id="donateModal" role="dialog">
@@ -99,7 +224,7 @@
 
                         <!-- X (Twitter) Share -->
                         <a href="#" id="xShare" target="_blank" class="btn btn-dark btn-share">
-                            <i class="fab fa-x-twitter"></i> <span class="mt-2">X</span>
+                            <i class="fab fa-twitter"></i> <span class="mt-2">X</span>
                         </a>
 
                         <!-- Facebook Share -->
@@ -110,7 +235,7 @@
 
                     <!-- Copy Link -->
                     <button class="btn btn-secondary mt-4" onclick="copyLink()">
-                        <i class="fas fa-link"></i> <span id="copy-text"></span>
+                        <i class="fas fa-link"></i> <span id="copy-text">نسخ الرابط</span>
                     </button>
                 </div>
                 <div class="modal-footer">
@@ -122,7 +247,7 @@
             </div>
         </div>
     </div>
-    <!-- Donate Modal end -->
+
     <!-- Bootstrap 5 Toast -->
     <div class="position-fixed bottom-0 end-0 p-md-3" style="z-index: 999999">
         <div id="copyToast" class="toast align-items-center text-white bg-success border-0" role="alert"
@@ -136,108 +261,71 @@
             </div>
         </div>
     </div>
-    <!-- Bootstrap 5 Toast END -->
 
-    <header data-aos="fade" data-aos-duration="500"
-        style="background: rgb(67, 55, 37); border-bottom: 2px solid rgb(209, 178, 113);">
-        <div class="container px-2 d-flex align-items-center justify-content-between py-2" id="navbar-example">
-            <div class="d-flex align-items-center">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/img/logo.svg" alt="محفظ الوحيين elmohafez" class="img-fluid" />
-                    </a>
-                </div>
-                <div class="nav-drop navbar">
-                    <a class="nav-link text-white" href="index.html">الرئيسية</a>
-                </div>
-            </div>
-            <div>
-                <a href="https://www.launchgood.com/v4/campaign/mohafez_campaign" target="_blank" data-aos="fade-left"
-                    class="text-white btn btn-style rounded mt-1 plus bg-btn-green btn-lg">
-                    تبرع
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <section class="py-4 overflow-hidden">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mt-4 pt-lg-5 d-flex flex-column ">
-                    <div class="py-2 mt-lg-5">
-                        <p>منصة <a href="https://www.launchgood.com/v4/campaign/mohafez_campaign" target="_blank"
-                                class="en-font">LaunchGood.com</a> يضيف مبلغا اختياريا على المبلغ الذي تختاره
-                            لدعم محفظ
-                            الوحيين، ويمكنك بكل سهولة أن تجعل
-                            هذا المبلغ
-                            الإضافي صفراً أو تغيره.
-                        </p>
-                    </div>
-                    <div>
-                        <button type="button" data-aos="fade-left" data-bs-toggle="modal" data-bs-target="#donateModal"
-                            class="btn btn-style rounded mt-1 plus btn-secondary btn-lg">
-                            المشاركة
-                        </button>
-                        <a target="_blank" href="https://www.launchgood.com/v4/campaign/mohafez_campaign"
-                            class="text-white btn btn-style rounded mt-1 plus bg-btn-green btn-lg">
-                            تبرع
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-4 d-flex justify-content-lg-center">
-                    <img src="assets/img/feature/d1.webp" alt="" class="img-fluid donate-img mx-1" />
-                </div>
-                <div class="col-lg-6 mt-4 pt-lg-5 d-flex flex-column">
-                    <div class="py-2 mt-lg-5">
-                        <p>بعدما تختار المبلغ المطلوب للدعم كالتالي: <br>
-                            تنتقل إلى الأسفل وتغير المبلغ الذي تريد أن تدعم منصة <a class="en-font"
-                                href="https://www.launchgood.com/v4/campaign/mohafez_campaign"
-                                target="_blank">launchgood</a>
-                        </p>
-                    </div>
-                    <div>
-                        <button type="button" data-aos="fade-left" data-bs-toggle="modal" data-bs-target="#donateModal"
-                            class="btn btn-style rounded mt-1 plus btn-secondary btn-lg">
-                            المشاركة
-                        </button>
-                        <a target="_blank" href="https://www.launchgood.com/v4/campaign/mohafez_campaign"
-                            class="text-white btn btn-style rounded mt-1 plus bg-btn-green btn-lg">
-                            تبرع
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-4 d-flex justify-content-lg-center">
-                    <img src="assets/img/feature/d2.webp" alt="" class="img-fluid donate-img mx-1" />
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!--////////////////////////// JavaScripts -->
-    <!-- aos data Animation Library -->
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-    <!-- Bootstrap js -->
+    <!-- Scripts -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Jquery js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- vendors js (For Hover Movement And Svg Animation) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/vendors/vendors.min.js"></script>
-    <script src="assets/js/vendors/main.min.js"></script>
-
-    <!-- swiper master -->
     <script src="assets/swiper-master/js/swiper.min.js"></script>
 
-    <!-- My Local Scripts -->
-    <script src="assets/js/script.js"></script>
-
     <script>
+        // Initialize AOS animation
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
 
+        // Timeline scroll effects
+        document.addEventListener("DOMContentLoaded", function () {
+            const timelineSteps = document.querySelectorAll('.timeline-step');
+            const progressBar = document.getElementById('timeline-progress');
 
+            // Function to check if element is in viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.7 &&
+                    rect.bottom >= 0
+                );
+            }
+
+            // Function to highlight active steps
+            function highlightActiveSteps() {
+                let activeIndex = -1;
+
+                timelineSteps.forEach((step, index) => {
+                    if (isInViewport(step)) {
+                        step.classList.add('active');
+                        if (activeIndex === -1) {
+                            activeIndex = index;
+                        }
+                    } else {
+                        step.classList.remove('active');
+                    }
+                });
+
+                // Update progress bar
+                if (activeIndex >= 0) {
+                    const totalHeight = timelineSteps[timelineSteps.length - 1].offsetTop +
+                        timelineSteps[timelineSteps.length - 1].offsetHeight -
+                        timelineSteps[0].offsetTop;
+
+                    const currentProgress = ((activeIndex + 1) / timelineSteps.length) * 100;
+                    progressBar.style.height = currentProgress + '%';
+                }
+            }
+
+            // Initial check and scroll event listener
+            highlightActiveSteps();
+            window.addEventListener('scroll', highlightActiveSteps);
+        });
+
+        // Share functionality
         document.addEventListener("DOMContentLoaded", function () {
             // Define share variables
             let shareUrl = encodeURIComponent(window.location.href);
-            let shareImage = encodeURIComponent("assets/img/icons/favicon/favicon.svg");
             let shareText = encodeURIComponent("ساهم في دعم محفظ الوحيين - تبرع الآن!");
 
             // WhatsApp Share
@@ -251,12 +339,9 @@
             // Facebook Share
             document.getElementById("facebookShare").href =
                 `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`;
-
         });
 
         // Copy Link Function
-        document.getElementById("copy-text").innerText = window.location.href;
-
         function copyLink() {
             const link = window.location.href;
             navigator.clipboard.writeText(link).then(() => {
@@ -265,15 +350,6 @@
             }).catch(err => console.error('Error copying text:', err));
         }
     </script>
-
-    <script>
-        AOS.init({
-            // offset: 300,
-            duration: 1000,
-            once: true,
-        });
-    </script>
-
 </body>
 
 </html>
